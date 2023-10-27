@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Guest\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// GETS THE ROUTE FRON THE Controller PageController CLASS AND USES THE 'index' METHOD. GIVES THE ROUTE THE "home" NAME
+Route::get('/', [PageController::class, 'index'])->name('home');
