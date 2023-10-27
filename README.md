@@ -41,7 +41,14 @@ Route::get('/', [PageController::class, 'index'])->name('home');
 - add some records to the table using php my admin
 - open tinker `php artisan ti`
 - read the data inside tinker (CLI) `App\Models\Movie::all()` returns all data from the table
-- uypdate the controller method to show all data taken form the db table
+- update the controller and the  route method to show all data taken form the db table
+
+ADD
+```php
+
+use App\Models\Movie;
+
+```
 
 ```php
 
