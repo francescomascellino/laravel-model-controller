@@ -1,1 +1,26 @@
 @import '~bootstrap/scss/bootstrap';
+
+@import './partials/variables.scss';
+
+body {
+    background-color: $body;
+}
+
+h1 {
+    color: $title;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.card {
+    background-color: $card;
+
+    h4 {
+        color: $subtitle;
+        font-variant: small-caps;
+    }
+
+    p {
+        color: $primary;
+    }
+}
