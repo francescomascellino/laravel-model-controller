@@ -47,7 +47,7 @@ Route::get('/', [PageController::class, 'index'])->name('home');
 
 public function index()
 {
-    return view('index', ['books' => Movie::all()]);
+    return view('index', ['movies' => Movie::all()]);
 }
 
 ```
