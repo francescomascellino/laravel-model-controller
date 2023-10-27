@@ -1,5 +1,8 @@
 @extends('layout.app')
 
+{{-- THIS CHANGES THE @yield() ON THE app.blade <title> --}}
+@section('title', 'Movies')
+
 @section('content')
     <h1>MOVIES</h1>
     <main>
