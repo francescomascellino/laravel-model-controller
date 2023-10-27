@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Guest\PageController;
+use App\Models\Movie;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +16,4 @@ use App\Http\Controllers\Guest\PageController;
 */
 
 // GETS THE ROUTE FRON THE Controller PageController CLASS AND USES THE 'index' METHOD. GIVES THE ROUTE THE "home" NAME
-Route::get('/', [PageController::class, 'index'])->name('home');
+Route::get('/', [PageController::class, 'index', 'movies' => Movie::all()])->name('home');
